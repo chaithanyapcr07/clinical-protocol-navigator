@@ -1,0 +1,13 @@
+.venv/
+.venv311/
+__pycache__/
+*.pyc
+.env
+clinical_policies/*.pdf
+uploads/*
+!uploads/.gitkeep
+data/context_cache_index.json
+data/benchmark_runs/*.csv
+data/benchmark_runs/*.jsonl
+data/audit/*.jsonl
+.DS_Store

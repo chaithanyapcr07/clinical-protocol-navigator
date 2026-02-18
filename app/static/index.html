@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinical Protocol Navigator</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel hero">
+        <h1>Clinical Protocol Navigator</h1>
+        <p>
+          Benchmark policy Q&A in two architectures: <strong>Traditional RAG</strong> vs
+          <strong>Long Context</strong>.
+        </p>
+        <p class="disclaimer">Research-only tool. Not for diagnosis or treatment decisions.</p>
+      </section>
+
+      <section class="panel">
+        <h2>1) Upload Clinical Documents</h2>
+        <input id="fileInput" type="file" multiple accept=".pdf,.txt,.md" />
+        <button id="uploadBtn">Upload</button>
+        <button id="resetBtn" type="button">Reset Corpus</button>
+        <div id="uploadStatus" class="status"></div>
+        <ul id="docList"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>2) Ask a Cross-Reference Question</h2>
+        <textarea id="question" rows="5" placeholder="Example: Does our ICU sepsis protocol conflict with the 2026 CMS sepsis quality measure update?"></textarea>
+
+        <div class="controls">
+          <label for="mode">Mode</label>
+          <select id="mode">
+            <option value="rag">RAG</option>
+            <option value="long_context">Long Context</option>
+          </select>
+          <button id="askBtn">Run Selected Mode</button>
+          <button id="benchmarkBtn">Run Side-by-Side Benchmark</button>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel result" id="singleResult"></article>
+        <article class="panel result" id="compareResult"></article>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
