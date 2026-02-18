@@ -187,3 +187,4 @@ Options:
 ## Diagrams
 
 - Architecture + UI diagrams for newsletter/reference: `docs/DIAGRAMS.md`
+- Live run-screen layout diagram: `docs/UI_BENCHMARK_LAYOUT.md`
