@@ -188,3 +188,7 @@ Options:
 
 - Architecture + UI diagrams for newsletter/reference: `docs/DIAGRAMS.md`
 - Live run-screen layout diagram: `docs/UI_BENCHMARK_LAYOUT.md`
+
+### Live UI Screenshot
+
+![Clinical Protocol Navigator UI Run](docs/images/ui-benchmark-screenshot.png)
